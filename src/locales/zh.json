@@ -1,17 +1,15 @@
 {
   "app": {
-    "title": "Vite + Vue 3 Starter Template",
+    "title": "Vite + Vue 3 初始化模板",
     "description": "Vite + Vue 3 单页面应用初始化模板, 支持国际化、Axios、UnoCSS、文件路由和自动化的 API 导入。"
   },
   "page": {
     "index": {
-      "title": "Vite + Vue 3 Starter Template",
-      "get-todo-list": "获取待办事项列表"
+      "title": "Vite + Vue 3 初始化模板"
     },
     "about": {
       "title": "关于",
-      "show-logo": "显示 Logo",
-      "hide-logo": "隐藏 Logo"
+      "description": ""
     },
     "not-found": {
       "title": "未找到页面",
@@ -23,7 +21,10 @@
     "index-page": "首页",
     "about-page": "关于页面",
     "toggle-dark": "切换暗色模式",
-    "toggle-locale": "切换语言"
+    "toggle-locale": "切换语言",
+    "show-logo": "显示 Logo",
+    "hide-logo": "隐藏 Logo",
+    "request": "网络请求"
   },
   "empty": "暂无内容"
 }

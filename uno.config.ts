@@ -17,8 +17,9 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'bg-main': 'bg-neutral-100  dark:bg-neutral-900 ',
-      'text-main': 'text-neutral-900 dark:text-neutral-200',
+      'background-color': 'bg-white  dark:bg-hex-09090b',
+      'text-color': 'text-hex-09090b dark:text-hex-fafafa',
+      'border-color': 'border-hex-e4e4e7 dark:border-hex-27272a',
     },
   ],
   presets: [

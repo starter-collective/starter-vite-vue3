@@ -41,9 +41,8 @@ function fetchData() {
     {{ route.meta.title }}
   </h1>
   <div flex justify-center items-center my-5>
-    <TheButton lh-4 @click="fetchData">
-      <img v-show="loading" mr-2 src="@/assets/loading.svg">
-      {{ t('page.index.get-todo-list') }}
+    <TheButton :loading lh-4 @click="fetchData">
+      {{ t('button.request') }}
     </TheButton>
   </div>
   <ul v-if="todoList && todoList.length > 0" my-5 h-50 overflow-y-auto>

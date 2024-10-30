@@ -13,10 +13,6 @@
 const route = useRoute()
 
 const { t } = useI18n()
-
-const { headerLogo } = storeToRefs(useLayoutStore())
-
-const { toggleLogo } = useLayoutStore()
 </script>
 
 <template>
@@ -24,8 +20,6 @@ const { toggleLogo } = useLayoutStore()
     {{ route.meta.title }}
   </h1>
   <div flex justify-center items-center my-5>
-    <TheButton lh-4 @click="toggleLogo">
-      {{ headerLogo ? t('page.about.hide-logo') : t('page.about.show-logo') }}
-    </TheButton>
+    {{ t('app.description') }}
   </div>
 </template>

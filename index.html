@@ -3,13 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>%VITE_PUBLIC_TITLE%</title>
 </head>
 
 <body>
-  <div id="app" />
+  <div id="app">
+    <div class="app-loading" align="center" style="position: fixed; transform: translateY(-50%); top: 50%; width: 100vw; height: 100%vh">
+      <img src="/logo.png" alt="Logo Image" width="80px">
+      <p style="margin:  20px;">
+        <b>A thousand mile trip begins with one step</b>
+      </p>
+      <p style="margin:  20px;">
+        <b>千里之行，始于足下</b>
+      </p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <g>
+          <circle cx="12" cy="2.5" r="1.5" fill="currentColor" opacity=".14" />
+          <circle cx="16.75" cy="3.77" r="1.5" fill="currentColor" opacity=".29" />
+          <circle cx="20.23" cy="7.25" r="1.5" fill="currentColor" opacity=".43" />
+          <circle cx="21.5" cy="12" r="1.5" fill="currentColor" opacity=".57" />
+          <circle cx="20.23" cy="16.75" r="1.5" fill="currentColor" opacity=".71" />
+          <circle cx="16.75" cy="20.23" r="1.5" fill="currentColor" opacity=".86" />
+          <circle cx="12" cy="21.5" r="1.5" fill="currentColor" />
+          <animateTransform attributeName="transform" calcMode="discrete" dur="0.75s" repeatCount="indefinite"
+            type="rotate"
+            values="0 12 12;30 12 12;60 12 12;90 12F 12;120 12 12;150 12 12;180 12 12;210 12 12;240 12 12;270 12 12;300 12 12;330 12 12;360 12 12" />
+        </g>
+      </svg>
+    </div>
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 

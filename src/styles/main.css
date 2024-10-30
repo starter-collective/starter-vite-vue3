@@ -7,11 +7,11 @@ body,
 }
 
 :root {
-  --primary-color: #020617;
+  --primary-color: #09090b;
 }
 
 :root.dark {
-  --primary-color: #f0f0f0;
+  --primary-color: #fafafa;
 }
 
 html.dark {
@@ -23,7 +23,7 @@ html:not(.dark) {
 }
 
 body {
-  --at-apply: bg-main text-main;
+  --at-apply: background-color text-color;
 }
 
 a:hover {
