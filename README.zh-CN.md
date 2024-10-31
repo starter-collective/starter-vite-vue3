@@ -1,6 +1,6 @@
 # Vite + Vue 3 启动模板
 
-[![Version](https://img.shields.io/github/v/release/starter-collective/starter-vite-vue3?style=flat&label=%20&color=%230d0d0d)](https://github.com/starter-collective/starter-vite-vue3/releases)
+[![Version](https://img.shields.io/github/v/release/starter-collective/starter-vite-vue3?style=flat&label=%20&color=%2309090b)](https://github.com/starter-collective/starter-vite-vue3/releases)
 
 Vite + Vue 3 单页面应用初始化模板, 支持国际化、Axios、UnoCSS、文件路由和自动化的 API 导入。
 
