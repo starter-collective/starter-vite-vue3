@@ -12,8 +12,6 @@
 <script lang="ts" setup>
 import type { TodoList } from '@/apis/todo'
 
-const route = useRoute()
-
 const { t } = useI18n()
 
 const todoList = ref<TodoList>([])
@@ -37,21 +35,21 @@ function fetchData() {
 </script>
 
 <template>
-  <h1 text-center text-lg font-bold mb-5>
-    {{ route.meta.title }}
-  </h1>
-  <div flex justify-center items-center my-5>
-    <TheButton :loading lh-4 @click="fetchData">
+  <div my-6 border-1 rd-1 border-color p-6>
+    {{ t('app.description') }}
+  </div>
+  <div border-1 rd-1 border-color p-6>
+    <TheButton mx-auto :loading @click="fetchData">
       {{ t('button.request') }}
     </TheButton>
+    <ul v-if="todoList && todoList.length > 0" my-5 h-30 overflow-y-auto>
+      <li v-for="item in todoList" :key="item.id" text-base lh-normal>
+        <input type="checkbox" accent-primary>
+        {{ item.title }}
+      </li>
+    </ul>
+    <p v-if="todoList.length === 0" text-center my-5 op-75>
+      {{ emptyText || t('empty') }}
+    </p>
   </div>
-  <ul v-if="todoList && todoList.length > 0" my-5 h-50 overflow-y-auto>
-    <li v-for="item in todoList" :key="item.id" text-base lh-normal>
-      <input type="checkbox" accent-primary>
-      {{ item.title }}
-    </li>
-  </ul>
-  <p v-if="todoList.length === 0" my-5 text-center op-75>
-    {{ emptyText || t('empty') }}
-  </p>
 </template>
