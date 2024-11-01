@@ -20,10 +20,10 @@
     "back": "返回",
     "index-page": "首页",
     "about-page": "关于页面",
-    "toggle-dark": "切换暗色模式",
-    "toggle-locale": "切换语言",
+    "404-page": "404 页面",
     "show-logo": "显示 Logo",
     "hide-logo": "隐藏 Logo",
+    "toggle-logo-description": "切换 Logo 的可见性",
     "request": "网络请求"
   },
   "empty": "暂无内容"

@@ -10,16 +10,16 @@
 </route>
 
 <script lang="ts" setup>
-const route = useRoute()
-
 const { t } = useI18n()
 </script>
 
 <template>
-  <h1 text-center text-lg font-bold mb-5>
-    {{ route.meta.title }}
-  </h1>
-  <div flex justify-center items-center my-5>
-    {{ t('app.description') }}
+  <div border-1 rd-1 border-color p-6>
+    <h1 text-center text-lg font-bold mb-5>
+      {{ t('page.about.title') }}
+    </h1>
+    <p op-75 text-center>
+      {{ t('app.description') }}
+    </p>
   </div>
 </template>

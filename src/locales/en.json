@@ -19,10 +19,10 @@
     "back": "Back",
     "index-page": "Index Page",
     "about-page": "About Page",
-    "toggle-dark": "Toggle dark mode",
-    "toggle-locale": "Change languages",
+    "404-page": "404 Page",
     "show-logo": "Show Logo",
     "hide-logo": "Hide Logo",
+    "toggle-logo-description": "Toggle the visibility of the logo",
     "request": "Request"
   },
   "empty": "No content"

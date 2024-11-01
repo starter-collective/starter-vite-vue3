@@ -9,8 +9,6 @@ const router = useRouter()
 
 const { headerLogo } = storeToRefs(useLayoutStore())
 
-const { toggleLogo } = useLayoutStore()
-
 function goPage(path: string) {
   router.push(path)
 }
@@ -22,7 +20,7 @@ function openGithub() {
 
 <template>
   <main w-full h-full>
-    <header py-10 px-6 text-center>
+    <header py-10 px-4 text-center>
       <img v-if="headerLogo" alt="Logo Image" src="/logo.png" w-20 m-auto>
       <p text-6 font-bold my-5>
         <span mr-2 font-800>{{ t('app.title') }}</span>
@@ -35,11 +33,11 @@ function openGithub() {
         <TheButton v-else @click="goPage('/about')">
           {{ t('button.about-page') }}
         </TheButton>
-        <TheButton @click="toggleLocale()">
-          {{ t('button.toggle-locale') }}
+        <TheButton @click="goPage('/404')">
+          {{ t('button.404-page') }}
         </TheButton>
-        <TheButton @click="toggleLogo">
-          {{ headerLogo ? t('button.hide-logo') : t('button.show-logo') }}
+        <TheButton @click="toggleLocale()">
+          <i i-carbon-ibm-watson-language-translator />
         </TheButton>
         <TheButton @click="toggleDark()">
           <i i="carbon-sun dark:carbon-moon" />
@@ -49,10 +47,10 @@ function openGithub() {
         </TheButton>
       </p>
     </header>
-    <main m-auto border-1.5 border-color rd-1.5 p-5 min-h-32 max-w-xs sm:max-w-2xl>
+    <main m-auto min-h-32 max-w-full px-4 sm:max-w-2xl>
       <RouterView />
     </main>
-    <footer py-10 px-6 text-center>
+    <footer py-10 px-4 text-center>
       <a :href="LICENSE_URL" target="_blank">MIT License</a> © {{ new Date().getFullYear() }} <a
         href="https://github.com/kieranwv" target="_blank"
       >Kieran Wang</a>
