@@ -24,13 +24,13 @@ function goBack() {
 <template>
   <div w-full h-full flex="~ items-center justify-center col">
     <img w-80 src="@/assets/not-found.svg" alt="404 Image">
-    <p text-3xl mt-15 mb-5 font-bold color-dark>
+    <h1 text-3xl mt-15 mb-5 font-bold>
       {{ t('page.not-found.title') }}
-    </p>
-    <p mt-5 mb-15 color-gray-600>
+    </h1>
+    <p mt-5 mb-15>
       {{ t('page.not-found.content') }}
     </p>
-    <TheButton link type="info" size="large" @click="goBack">
+    <TheButton @click="goBack">
       <i i-carbon-return mr-2 />
       <span> {{ t('button.back') }}</span>
     </TheButton>

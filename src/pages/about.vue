@@ -14,12 +14,12 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div border-1 rd-1 border-color p-6>
-    <h1 text-center text-lg font-bold mb-5>
+  <TheCard>
+    <h2 text-center text-lg font-bold mb-5>
       {{ t('page.about.title') }}
-    </h1>
-    <p op-75 text-center>
+    </h2>
+    <p>
       {{ t('app.description') }}
     </p>
-  </div>
+  </TheCard>
 </template>

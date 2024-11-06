@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 defineProps<{
   loading?: boolean
+  disabled?: boolean
 }>()
 </script>
 
 <template>
-  <button text-sm px-4 py-1 rd-1.5 inline-block bg-primary text-hex-f0f0f0 dark:text-hex-020617 cursor-pointer hover:op-75 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 border-none flex items-center py-2 v-bind="$attrs">
+  <button flex="~ items-center" :disabled text-sm px-4 py-2 rd-1.5 inline-block bg-hex-0d1828 text-hex-f8fafc cursor-pointer hover:op-75 disabled:cursor-default disabled:op-50 border-none v-bind="$attrs">
     <svg v-if="loading" mr-2 xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
       <g>
         <circle cx="12" cy="2.5" r="1.5" fill="currentColor" opacity=".14" />
@@ -21,7 +22,6 @@ defineProps<{
         />
       </g>
     </svg>
-
     <slot />
   </button>
 </template>

@@ -12,14 +12,13 @@ import {
 export default defineConfig({
   theme: {
     colors: {
-      primary: 'var(--primary-color)',
+      primary: '#FF057C',
     },
   },
   shortcuts: [
     {
-      'background-color': 'bg-white  dark:bg-hex-09090b',
-      'text-color': 'text-hex-09090b dark:text-hex-fafafa',
-      'border-color': 'border-hex-e4e4e7 dark:border-hex-27272a',
+      'background-color': 'bg-white  dark:bg-hex-020817',
+      'text-color': 'text-hex-020817 dark:text-hex-fafafa',
     },
   ],
   presets: [

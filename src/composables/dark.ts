@@ -3,7 +3,9 @@
  *
  * @see https://vueuse.org/core/useDark/
  */
-export const isDark = useDark()
+export const isDark = useDark({
+  storageKey: `color-scheme`,
+})
 
 /**
  * Toggle dark mode

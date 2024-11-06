@@ -1,5 +1,5 @@
 <template>
-  <main w-screen h-screen>
+  <main>
     <RouterView />
   </main>
 </template>

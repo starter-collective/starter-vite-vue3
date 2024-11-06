@@ -19,14 +19,14 @@ function openGithub() {
 </script>
 
 <template>
-  <main w-full h-full>
-    <header py-10 px-4 text-center>
-      <img v-if="headerLogo" alt="Logo Image" src="/logo.png" w-20 m-auto>
-      <p text-6 font-bold my-5>
+  <main px-4>
+    <header py-8 text-center>
+      <img v-if="headerLogo" mx-auto alt="Logo Image" src="/logo.png" w-20>
+      <h1>
         <span mr-2 font-800>{{ t('app.title') }}</span>
         <sup><i>v{{ APP_VERSION }}</i></sup>
-      </p>
-      <p flex flex-wrap gap-2 justify-center>
+      </h1>
+      <div flex="~ wrap gap-2 justify-center">
         <TheButton v-if="route.path === '/about'" @click="goPage('/')">
           {{ t('button.index-page') }}
         </TheButton>
@@ -45,15 +45,15 @@ function openGithub() {
         <TheButton @click="openGithub()">
           <i i="carbon-logo-github" />
         </TheButton>
-      </p>
+      </div>
     </header>
-    <main m-auto min-h-32 max-w-full px-4 sm:max-w-2xl>
+    <main m-auto min-h-32 max-w-full sm:max-w-2xl>
       <RouterView />
     </main>
-    <footer py-10 px-4 text-center>
-      <a :href="LICENSE_URL" target="_blank">MIT License</a> © {{ new Date().getFullYear() }} <a
-        href="https://github.com/kieranwv" target="_blank"
-      >Kieran Wang</a>
+    <footer flex="~ items-center justify-center gap-2" py-8>
+      <a :href="LICENSE_URL" target="_blank">MIT License</a>
+      <span> © {{ new Date().getFullYear() }} </span>
+      <a :href="AUTHOR_URL" target="_blank">Kieran Wang</a>
     </footer>
   </main>
 </template>

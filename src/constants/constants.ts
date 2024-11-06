@@ -16,6 +16,11 @@ export const APP_VERSION = version
 export const APP_STORAGE_KEY = `${APP_KEY}-v${APP_VERSION}`
 
 /**
+ * The url of the author.
+ */
+export const AUTHOR_URL = 'https://github.com/kieranwv'
+
+/**
  * The url of the GitHub repository.
  */
 export const GITHUB_URL = 'https://github.com/starter-collective/starter-vite-vue3'

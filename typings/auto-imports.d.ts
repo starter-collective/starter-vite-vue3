@@ -9,6 +9,7 @@ declare global {
   const APP_KEY: typeof import('../src/constants/constants')['APP_KEY']
   const APP_STORAGE_KEY: typeof import('../src/constants/constants')['APP_STORAGE_KEY']
   const APP_VERSION: typeof import('../src/constants/constants')['APP_VERSION']
+  const AUTHOR_URL: typeof import('../src/constants/constants')['AUTHOR_URL']
   const ContentTypeEnum: typeof import('../src/constants/enums')['ContentTypeEnum']
   const EffectScope: typeof import('vue')['EffectScope']
   const GITHUB_URL: typeof import('../src/constants/constants')['GITHUB_URL']
@@ -337,6 +338,7 @@ declare module 'vue' {
     readonly APP_KEY: UnwrapRef<typeof import('../src/constants/constants')['APP_KEY']>
     readonly APP_STORAGE_KEY: UnwrapRef<typeof import('../src/constants/constants')['APP_STORAGE_KEY']>
     readonly APP_VERSION: UnwrapRef<typeof import('../src/constants/constants')['APP_VERSION']>
+    readonly AUTHOR_URL: UnwrapRef<typeof import('../src/constants/constants')['AUTHOR_URL']>
     readonly ContentTypeEnum: UnwrapRef<typeof import('../src/constants/enums')['ContentTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly GITHUB_URL: UnwrapRef<typeof import('../src/constants/constants')['GITHUB_URL']>

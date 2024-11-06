@@ -17,9 +17,9 @@
   },
   "button": {
     "back": "Back",
-    "index-page": "Index Page",
-    "about-page": "About Page",
-    "404-page": "404 Page",
+    "index-page": "Index",
+    "about-page": "About",
+    "404-page": "404",
     "show-logo": "Show Logo",
     "hide-logo": "Hide Logo",
     "toggle-logo-description": "Toggle the visibility of the logo",

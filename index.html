@@ -6,18 +6,38 @@
   <link rel="icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>%VITE_PUBLIC_TITLE%</title>
+  <style>
+    #app-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #fafafa;
+      color: #020817;
+    }
+
+    #app-loading img {
+      margin-bottom: 2rem;
+    }
+
+    .dark #app-loading {
+      background-color: #020817;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-    <div class="app-loading" align="center" style="position: fixed; transform: translateY(-50%); top: 50%; width: 100vw; height: 100%vh">
-      <img src="/logo.png" alt="Logo Image" width="80px">
-      <p style="margin:  20px;">
-        <b>A thousand mile trip begins with one step</b>
-      </p>
-      <p style="margin:  20px;">
-        <b>千里之行，始于足下</b>
-      </p>
+    <div id="app-loading">
+      <img src="/logo.png" alt="Logo Image" width="100px">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
         <g>
           <circle cx="12" cy="2.5" r="1.5" fill="currentColor" opacity=".14" />
@@ -35,6 +55,10 @@
     </div>
   </div>
   <script type="module" src="/src/main.ts"></script>
+  <script>
+    var theme = localStorage.getItem('color-scheme');
+    document.documentElement.classList.toggle('dark', /dark/.test(theme))
+  </script>
 </body>
 
 </html>

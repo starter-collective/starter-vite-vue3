@@ -19,8 +19,8 @@
   "button": {
     "back": "返回",
     "index-page": "首页",
-    "about-page": "关于页面",
-    "404-page": "404 页面",
+    "about-page": "关于",
+    "404-page": "404",
     "show-logo": "显示 Logo",
     "hide-logo": "隐藏 Logo",
     "toggle-logo-description": "切换 Logo 的可见性",
