@@ -1,4 +1,4 @@
-# Vite + Vue 3 启动模板
+# Vite + Vue 3 初始化模板
 
 [![Version](https://img.shields.io/github/v/release/starter-collective/starter-vite-vue3?style=flat&label=%20&color=%2309090b)](https://github.com/starter-collective/starter-vite-vue3/releases)
 
