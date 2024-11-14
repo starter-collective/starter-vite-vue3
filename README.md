@@ -77,4 +77,4 @@ When you use this template, try follow the checklist to update your info properl
 
 ## License
 
-[MIT License](./LICENSE) © 2024 [Kieran Wang](https://github.com/kieranwv/)
+[MIT License](./LICENSE) © 2024-PRESENT [Kieran Wang](https://github.com/kieranwv/)
