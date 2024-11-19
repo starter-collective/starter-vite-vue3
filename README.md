@@ -6,7 +6,7 @@ Vite + Vue 3 SPA Starter Template, supports I18n, UnoCSS, Axios, File Routing an
 
 - [Live Demo](https://starter-vite-vue3.netlify.app/)
 - [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-vite-vue3)
-- [README for 简体中文](./README.zh-CN.md)
+- [README for 中文](./README.zh.md)
 
 ## Features
 

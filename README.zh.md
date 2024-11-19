@@ -6,7 +6,7 @@ Vite + Vue 3 单页面应用启动模板, 支持国际化、Axios、UnoCSS、文
 
 - [在线演示](https://starter-vite-vue3.netlify.app/)
 - [在 Stackblitz 上试用](https://stackblitz.com/github/starter-collective/starter-vite-vue3)
-- [简体中文的 README](./README.zh-CN.md)
+- [英语的 README](./README.zh.md)
 
 ## 特性
 
