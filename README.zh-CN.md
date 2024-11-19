@@ -71,9 +71,8 @@ pnpm i # 如果你没有安装 pnpm，运行：npm install -g pnpm
 
 使用此模板时，请按照以下检查列表正确更新信息：
 
-- [ ] 更改 `LICENSE` 中的作者姓名。
-- [ ] 更改 `locales/*.json` 和 `.env` 中的标题。
-- [ ] 更改 `public` 中的 favicon，并移除预览图片。
+- [ ] 更改 `src/locales/*.json` 和 `.env` 中的浏览器标题。
+- [ ] 更改 `public` 中的 favicon 和 logo 图标。
 
 ## 许可证
 
