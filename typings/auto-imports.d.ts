@@ -330,6 +330,7 @@ declare global {
   export type { ContentTypeEnum } from '../src/constants/enums'
   import('../src/constants/enums')
 }
+
 // for vue template auto import
 import { UnwrapRef } from 'vue'
 declare module 'vue' {
