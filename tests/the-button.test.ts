@@ -1,18 +1,47 @@
-import TheButton from '@/components/TheButton.vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
+import TheButton from '../src/components/TheButton.vue'
 
-const text = 'Button'
-
-describe('test use for TheButton.vue', () => {
-  it('create', () => {
+describe('theButton.vue', () => {
+  it('renders the slot content', () => {
     const wrapper = mount(TheButton, {
       slots: {
-        default: text,
+        default: '<span>Button Content</span>',
       },
     })
+    expect(wrapper.html()).toContain('<span>Button Content</span>')
+  })
 
-    expect(wrapper.exists()).toBe(true)
-    expect(wrapper.text()).toEqual(text)
+  it('is disabled when the disabled prop is true', () => {
+    const wrapper = mount(TheButton, {
+      props: {
+        disabled: true,
+      },
+    })
+    expect(wrapper.attributes('disabled')).toBeDefined()
+  })
+
+  it('shows loading spinner when loading prop is true', () => {
+    const wrapper = mount(TheButton, {
+      props: {
+        loading: true,
+      },
+    })
+    expect(wrapper.find('svg').exists()).toBe(true)
+  })
+
+  it('does not show loading spinner when loading prop is false', () => {
+    const wrapper = mount(TheButton, {
+      props: {
+        loading: false,
+      },
+    })
+    expect(wrapper.find('svg').exists()).toBe(false)
+  })
+
+  it('emits a click event when clicked', async () => {
+    const wrapper = mount(TheButton)
+    await wrapper.trigger('click')
+    expect(wrapper.emitted()).toHaveProperty('click')
   })
 })
