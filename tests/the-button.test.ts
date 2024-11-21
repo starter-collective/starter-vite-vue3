@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
 import TheButton from '../src/components/TheButton.vue'
 
-describe('theButton.vue', () => {
+describe('test for TheButton.vue', () => {
   it('renders the slot content', () => {
     const wrapper = mount(TheButton, {
       slots: {
