@@ -10,7 +10,7 @@
 </route>
 
 <script lang="ts" setup>
-import type { TodoList } from '@/apis/todo'
+import type { TodoList } from '@/types/todo'
 
 const { t } = useI18n()
 
