@@ -21,17 +21,17 @@ export default defineConfig(({ mode }) => {
   const chunks: string[] = ['axios', 'nprogress']
 
   return {
-    base: env.VITE_APP_BASE_URL,
+    base: env.VITE_BASE_PUBLIC_PATH,
     server: {
       host: true,
       port: 9865,
       // Proxy request and socket.
       // https://vitejs.dev/config/server-options.html#server-proxy
       proxy: {
-        [env.VITE_PUBLIC_REQUEST_URL]: {
-          target: env.VITE_PUBLIC_REQUEST_URL_PROXY,
+        [env.VITE_REQUEST_BASE_URL]: {
+          target: env.VITE_REQUEST_BASE_URL_PROXY,
           changeOrigin: true,
-          rewrite: (path: string) => path.replace(new RegExp(`^${env.VITE_PUBLIC_REQUEST_URL}`), ''),
+          rewrite: (path: string) => path.replace(new RegExp(`^${env.VITE_REQUEST_BASE_URL}`), ''),
         },
       },
     },

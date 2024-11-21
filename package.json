@@ -14,6 +14,8 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "simple-git-hooks",
     "dev": "vite dev",
+    "dev:test": "vite dev --mode testing",
+    "build:test": "vite build --mode testing",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",

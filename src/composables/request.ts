@@ -18,7 +18,7 @@ export function useRequest(config?: AxiosRequestConfig, interceptors?: {
   responseError?: (error: AxiosError) => AxiosError
 }) {
   const request = axios.create(assign({
-    baseURL: import.meta.env.VITE_PUBLIC_REQUEST_URL,
+    baseURL: import.meta.env.VITE_REQUEST_BASE_URL,
     timeout: 1000 * 10,
     headers: {
       'Content-Type': ContentTypeEnum.JSON,
