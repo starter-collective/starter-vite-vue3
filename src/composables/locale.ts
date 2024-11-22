@@ -13,6 +13,7 @@ export function useLocale() {
     }
 
     locale.value = _locale as string
+    localStorage.setItem('i18n-redirected', _locale)
     setLocaleTitle()
   }
 
