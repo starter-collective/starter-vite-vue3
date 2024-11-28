@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
