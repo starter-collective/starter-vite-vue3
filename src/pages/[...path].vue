@@ -1,15 +1,19 @@
 <route lang="json">
 {
-  "name": "404",
-  "meta": {
-    "title": "Page Not Found",
-    "locale": "page.not-found.title"
-  }
+  "name": "not-found"
 }
 </route>
 
 <script setup lang="ts">
 const { t } = useI18n()
+
+const title = computed(() => {
+  return t('page.not-found.title')
+})
+
+useHead({
+  title,
+})
 
 const router = useRouter()
 

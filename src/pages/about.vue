@@ -1,9 +1,7 @@
 <route lang="json">
 {
-  "name": "About",
+  "name": "about",
   "meta": {
-    "title": "About Page",
-    "locale": "page.about.title",
     "layout": "page"
   }
 }
@@ -11,6 +9,14 @@
 
 <script lang="ts" setup>
 const { t } = useI18n()
+
+const title = computed(() => {
+  return t('page.about.title')
+})
+
+useHead({
+  title,
+})
 </script>
 
 <template>

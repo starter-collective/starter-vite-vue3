@@ -16,15 +16,7 @@ router.beforeEach(() => {
   NProgress.start()
 })
 
-router.afterEach((to) => {
-  const { setLocaleTitle } = useLocale()
-  if (to.meta.locale)
-    setLocaleTitle(to.meta.locale, true)
-  else if (to.meta.title)
-    setLocaleTitle(to.meta.title)
-  else
-    setLocaleTitle()
-
+router.afterEach(() => {
   NProgress.done()
 })
 

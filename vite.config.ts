@@ -3,6 +3,7 @@
 import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import { unheadVueComposablesImports } from '@unhead/vue'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import UnoCSS from 'unocss/vite'
@@ -76,6 +77,7 @@ export default defineConfig(({ mode }) => {
         imports: [
           'vue',
           VueRouterAutoImports,
+          unheadVueComposablesImports,
           {
             // add any other imports you were relying on
             'vue-router/auto': ['useLink'],

@@ -1,9 +1,7 @@
 <route lang="json">
 {
-  "name": "Index",
+  "name": "index",
   "meta": {
-    "title": "Index Page",
-    "locale": "page.index.title",
     "layout": "page"
   }
 }
@@ -13,6 +11,14 @@
 import type { TodoList } from '@/types/todo'
 
 const { t } = useI18n()
+
+const title = computed(() => {
+  return t('page.index.title')
+})
+
+useHead({
+  title,
+})
 
 const { headerLogo } = storeToRefs(useLayoutStore())
 
