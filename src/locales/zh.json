@@ -19,12 +19,14 @@
   "button": {
     "back": "返回",
     "index-page": "首页",
-    "about-page": "关于",
-    "404-page": "404",
+    "about-page": "关于页面",
+    "404-page": "404 页面",
     "show-logo": "显示 Logo",
     "hide-logo": "隐藏 Logo",
-    "toggle-logo-description": "切换 Logo 的可见性",
-    "request": "网络请求"
+    "toggle-logo-description": "基于 Pinia 的状态管理",
+    "axios-request": "使用 Axios 发起请求",
+    "dynamic-route": "动态路由",
+    "dynamic-route-description": "基于文件的动态路由"
   },
   "empty": "暂无内容"
 }

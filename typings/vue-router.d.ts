@@ -21,5 +21,6 @@ declare module 'vue-router/auto-routes' {
     'index': RouteRecordInfo<'index', '/', Record<never, never>, Record<never, never>>,
     'not-found': RouteRecordInfo<'not-found', '/:path(.*)', { path: ParamValue<true> }, { path: ParamValue<false> }>,
     'about': RouteRecordInfo<'about', '/about', Record<never, never>, Record<never, never>>,
+    'dynamic': RouteRecordInfo<'dynamic', '/dynamic/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
   }
 }

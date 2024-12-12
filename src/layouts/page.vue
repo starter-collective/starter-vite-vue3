@@ -3,15 +3,7 @@ const { t } = useI18n()
 
 const { toggleLocale } = useLocale()
 
-const route = useRoute()
-
-const router = useRouter()
-
 const { headerLogo } = storeToRefs(useLayoutStore())
-
-function goPage(path: string) {
-  router.push(path)
-}
 
 function openGithub() {
   window.open(GITHUB_URL)
@@ -27,15 +19,6 @@ function openGithub() {
         <sup><i>v{{ APP_VERSION }}</i></sup>
       </h1>
       <div flex="~ wrap gap-2 justify-center">
-        <TheButton v-if="route.path === '/about'" @click="goPage('/')">
-          {{ t('button.index-page') }}
-        </TheButton>
-        <TheButton v-else @click="goPage('/about')">
-          {{ t('button.about-page') }}
-        </TheButton>
-        <TheButton @click="goPage('/404')">
-          {{ t('button.404-page') }}
-        </TheButton>
         <TheButton @click="toggleLocale()">
           <i i-carbon-ibm-watson-language-translator />
         </TheButton>

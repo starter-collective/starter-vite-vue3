@@ -17,13 +17,15 @@
   },
   "button": {
     "back": "Back",
-    "index-page": "Index",
-    "about-page": "About",
-    "404-page": "404",
+    "index-page": "Index Page",
+    "about-page": "About Page",
+    "404-page": "404 Page",
     "show-logo": "Show Logo",
     "hide-logo": "Hide Logo",
-    "toggle-logo-description": "Toggle the visibility of the logo",
-    "request": "Request"
+    "toggle-logo-description": "State management based on Pinia",
+    "axios-request": "Request with Axios",
+    "dynamic-route": "Dynamic Route",
+    "dynamic-route-description": "File-based dynamic routing"
   },
   "empty": "No content"
 }

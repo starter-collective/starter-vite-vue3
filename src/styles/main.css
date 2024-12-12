@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  --at-apply: op-75 hover:op-100;
+  --at-apply: dark:op-75  dark:hover:op-100 op-100 hover:op-75;
   text-decoration: underline;
 }
 
