@@ -19,10 +19,6 @@ Vite + Vue 3 SPA Starter Template, supports I18n, UnoCSS, Axios, File Routing an
 - Unit Testing with [Vitest](https://github.com/vitest-dev/vitest).
 - Deploy on [Netlify](https://app.netlify.com/) with zero-config, supports other deployment methods as well.
 
-## Preview
-
-[![Preview Image](https://github.com/starter-collective/.github/blob/main/preview/starter-vite-vue3.png)](https://starter-vite-vue3.netlify.app/)
-
 ## Usage
 
 [Create a repo](https://github.com/starter-collective/starter-vite-vue3/generate) from this template on GitHub.
