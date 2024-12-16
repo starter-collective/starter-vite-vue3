@@ -2,19 +2,19 @@
 
 import { resolve } from 'node:path'
 import { cwd } from 'node:process'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import UnoCSS from 'unocss/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
+import unoCSS from 'unocss/vite'
+import autoImport from 'unplugin-auto-import/vite'
+import components from 'unplugin-vue-components/vite'
+import { VueRouterAutoImports as vueRouterAutoImports } from 'unplugin-vue-router'
+import vueRouter from 'unplugin-vue-router/vite'
 import { defineConfig, loadEnv } from 'vite'
 import viteCompression from 'vite-plugin-compression2'
-import VueDevTools from 'vite-plugin-vue-devtools'
-import Layouts from 'vite-plugin-vue-layouts'
+import vueDevTools from 'vite-plugin-vue-devtools'
+import layouts from 'vite-plugin-vue-layouts'
 
 export default defineConfig(({ mode }) => {
   // Load env variables.
@@ -59,24 +59,20 @@ export default defineConfig(({ mode }) => {
       // Vue layouts & pages plugin.
       // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
       // https://github.com/posva/unplugin-vue-router
-      Layouts(),
-      VueRouter({
+      layouts(),
+      vueRouter({
         dts: 'typings/vue-router.d.ts',
       }),
 
       // UnoCSS plugin, you can see uno.config.ts.
-      UnoCSS(),
-
-      // Vue dev tools.
-      // https://github.com/webfansplz/vite-plugin-vue-devtools
-      VueDevTools(),
+      unoCSS(),
 
       // Auto import api.
       // https://github.com/unplugin/unplugin-auto-import
-      AutoImport({
+      autoImport({
         imports: [
           'vue',
-          VueRouterAutoImports,
+          vueRouterAutoImports,
           unheadVueComposablesImports,
           {
             // add any other imports you were relying on
@@ -99,7 +95,7 @@ export default defineConfig(({ mode }) => {
 
       // Auto registry components.
       // https://github.com/antfu/unplugin-vue-components
-      Components({
+      components({
         extensions: ['vue'],
         include: [/\.vue$/, /\.vue\?vue/],
         dts: 'typings/components.d.ts',
@@ -107,16 +103,20 @@ export default defineConfig(({ mode }) => {
 
       // Auto import i18n locales.
       // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
-      VueI18n({
+      vueI18n({
         runtimeOnly: true,
         compositionOnly: true,
         fullInstall: true,
         include: [resolve(__dirname, 'src/locales/**')],
       }),
 
+      // Vue dev tools.
+      // https://github.com/webfansplz/vite-plugin-vue-devtools
+      env.VITE_DEV_TOOL === 'true' && vueDevTools(),
+
       // Vite compression plugin.
       // https://github.com/nonzzz/vite-plugin-compression
-      env.VITE_APP_GZIP === 'true' && viteCompression(),
+      env.VITE_BUILD_GZIP === 'true' && viteCompression(),
     ],
 
     // Optimize dependencies.
