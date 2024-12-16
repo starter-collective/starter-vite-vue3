@@ -35,7 +35,7 @@ function openGithub() {
     </main>
     <footer flex="~ items-center justify-center gap-2" py-8>
       <a :href="LICENSE_URL" target="_blank">MIT License</a>
-      <span> © {{ new Date().getFullYear() }} </span>
+      <span op-75> © {{ new Date().getFullYear() }} </span>
       <a :href="AUTHOR_URL" target="_blank">Kieran Wang</a>
     </footer>
   </main>

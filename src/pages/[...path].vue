@@ -26,7 +26,7 @@ function goBack() {
 </script>
 
 <template>
-  <div w-full h-full flex="~ items-center justify-center col">
+  <div w-full h-screen flex="~ items-center justify-center col">
     <img w-80 src="@/assets/not-found.svg" alt="404 Image">
     <h1 text-3xl mt-15 mb-5 font-bold>
       {{ t('page.not-found.title') }}

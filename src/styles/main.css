@@ -15,11 +15,11 @@ body,
 }
 
 body {
-  --at-apply: background-color text-color lh-normal;
+  --at-apply: background-color text-color text-op-75 lh-normal;
 }
 
 a {
-  --at-apply: dark:op-75  dark:hover:op-100 op-100 hover:op-75;
+  --at-apply: op-75  hover:op-100;
   text-decoration: underline;
 }
 
