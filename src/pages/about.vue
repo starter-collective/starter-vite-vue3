@@ -10,6 +10,8 @@
 <script lang="ts" setup>
 const { t } = useI18n()
 
+const { back } = useBack()
+
 const title = computed(() => {
   return t('page.about.title')
 })
@@ -27,5 +29,9 @@ useHead({
     <p>
       {{ t('app.description') }}
     </p>
+    <TheButton mx-auto mt-4 @click="back()">
+      <i i-carbon-return mr-2 />
+      <span> {{ t('button.back') }}</span>
+    </TheButton>
   </TheCard>
 </template>
