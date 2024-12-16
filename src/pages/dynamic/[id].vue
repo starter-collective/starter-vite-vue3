@@ -8,11 +8,13 @@
 </route>
 
 <script lang="ts" setup>
+import type { RouteLocationNormalizedLoaded } from 'vue-router/auto'
+
 const { t } = useI18n()
 
 const { back } = useBack()
 
-const route = useRoute()
+const route = useRoute() as RouteLocationNormalizedLoaded<'dynamic'>
 
 const title = computed(() => {
   return route.params.id
