@@ -13,7 +13,7 @@ function openGithub() {
 <template>
   <main px-4>
     <header py-8 text-center>
-      <img v-if="headerLogo" mx-auto alt="Logo Image" src="/logo.png" w-20>
+      <img v-if="headerLogo" mx-auto w-20 alt="Logo Image" src="/logo.png">
       <h1>
         <span mr-2 font-800>{{ t('app.title') }}</span>
         <sup><i>v{{ APP_VERSION }}</i></sup>

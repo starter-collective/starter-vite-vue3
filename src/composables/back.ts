@@ -1,3 +1,6 @@
+/**
+ * Back previous page or go to home page.
+ */
 export function useBack() {
   const router = useRouter()
 

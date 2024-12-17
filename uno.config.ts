@@ -12,7 +12,7 @@ import {
 export default defineConfig({
   theme: {
     colors: {
-      primary: '#FF057C',
+      primary: '#42b883',
     },
   },
   shortcuts: [
