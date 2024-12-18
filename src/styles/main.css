@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  --at-apply: op-75  hover:op-100;
+  --at-apply: op-75 hover:op-100;
   text-decoration: underline;
 }
 
@@ -36,7 +36,7 @@ h1 {
 }
 
 #nprogress .bar {
-  background: linear-gradient(to right, #FF057C, #7C64D5, #4CC3FF);
+  --at-apply: bg-primary;
   opacity: 0.75;
   position: fixed;
   z-index: 1031;
