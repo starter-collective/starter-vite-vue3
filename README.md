@@ -1,6 +1,7 @@
 # Vite + Vue 3 Starter Template
 
 [![Version](https://img.shields.io/github/v/release/starter-collective/starter-vite-vue3?style=flat&label=released&color=%2309090b)](https://github.com/starter-collective/starter-vite-vue3/releases)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b182d34-7d30-4206-aad9-9789d1c8ed11/deploy-status)](https://app.netlify.com/sites/starter-vite-vue3/deploys)
 
 Vite + Vue 3 SPA Starter Template, supports I18n, UnoCSS, Axios, File Routing and API auto-import.
 
