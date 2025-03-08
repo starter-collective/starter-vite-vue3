@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const inputValue = defineModel('inputValue', {
+const inputValue = defineModel('modelValue', {
   type: String,
   default: '',
 })
