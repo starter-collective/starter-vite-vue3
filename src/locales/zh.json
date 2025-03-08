@@ -14,6 +14,10 @@
     "not-found": {
       "title": "未找到页面",
       "content": "抱歉，您访问的页面不存在。"
+    },
+    "dynamic": {
+      "description": "了解更多关于动态路由的信息",
+      "multiple-route-params": "多层路由参数"
     }
   },
   "button": {
@@ -26,7 +30,8 @@
     "toggle-logo-description": "基于 Pinia 的状态管理",
     "axios-request": "使用 Axios 发起请求",
     "dynamic-route": "动态路由",
-    "dynamic-route-description": "基于文件的动态路由"
+    "dynamic-route-description": "基于文件的动态路由",
+    "jump": "跳转"
   },
   "empty": "暂无内容"
 }

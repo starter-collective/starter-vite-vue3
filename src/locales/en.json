@@ -13,6 +13,10 @@
     "not-found": {
       "title": "Page Not Found",
       "content": "Sorry, the page you visited does not exist."
+    },
+    "dynamic": {
+      "description": "Read more about dynamic routing in the",
+      "multiple-route-params": "Multiple Route Params"
     }
   },
   "button": {
@@ -25,7 +29,8 @@
     "toggle-logo-description": "State management based on Pinia",
     "axios-request": "Request with Axios",
     "dynamic-route": "Dynamic Route",
-    "dynamic-route-description": "File-based dynamic routing"
+    "dynamic-route-description": "File-based dynamic routing",
+    "jump": "Jump"
   },
   "empty": "No content"
 }
