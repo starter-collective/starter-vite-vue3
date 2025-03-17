@@ -11,4 +11,7 @@ export const useLayoutStore = defineStore('layout', () => {
   }
 
   return { headerLogo, toggleLogo }
+}, {
+  // Enable storage persistence
+  // persist: true,
 })
