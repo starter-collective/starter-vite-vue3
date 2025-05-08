@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 import vueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
+import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import unoCSS from 'unocss/vite'
@@ -117,6 +118,20 @@ export default defineConfig(({ mode }) => {
       // Vite compression plugin.
       // https://github.com/nonzzz/vite-plugin-compression
       env.VITE_BUILD_GZIP === 'true' && viteCompression(),
+
+      // Vite legacy plugin.
+      // https://github.com/vitejs/vite/tree/main/packages/plugin-legacy
+      env.VITE_LEGACY === 'true' && legacy({
+        targets: [
+          'defaults',
+          'iOS >= 10',
+          'Android >= 6',
+          'Chrome >= 49',
+          'Safari >= 10',
+          'Samsung >= 5',
+          'OperaMobile >= 46',
+        ],
+      }),
     ],
 
     // Optimize dependencies.

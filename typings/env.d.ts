@@ -4,6 +4,7 @@
 interface ImportMetaEnv {
   readonly VITE_BASE_PUBLIC_PATH: string
   readonly VITE_BUILD_GZIP: string
+  readonly VITE_BUILD_LEGACY: string
   readonly VITE_DEV_TOOL: string
   readonly VITE_REQUEST_BASE_URL: string
   readonly VITE_REQUEST_BASE_URL_PROXY: string
